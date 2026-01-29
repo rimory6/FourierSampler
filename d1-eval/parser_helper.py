@@ -118,7 +118,6 @@ def fix_sqrt(string):
 
 
 def strip_string(string):
-    # linebreaks
     string = string.replace("\n", "")
 
     # remove inverse spaces

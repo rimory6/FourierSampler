@@ -33,7 +33,7 @@ def rfft_lowpass_sliding_window_1d(x: torch.Tensor,
                                     progress: float,
                                     dim: int = 1) -> torch.Tensor:
     """
-    Apply rFFT + sliding window mask + iFFT reconstruction to a 1D real-valued signal along the dim axis
+    Apply rFFT + sliding window mask + iFFT reconstruction to a 1D real-valued signal(hiddenstates) along the dim axis
     """
     orig_dtype = x.dtype
     x32 = x.to(torch.float32)
